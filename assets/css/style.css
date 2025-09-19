@@ -958,7 +958,9 @@ main {
   height: calc(100% + 60px);
   background: var(--jet);
 }
-
+.news-title{
+  margin-bottom: 20px;
+}
 .news-timeline-item:first-child::before {
   top: 0px;
   height: calc(100% + 40px);
