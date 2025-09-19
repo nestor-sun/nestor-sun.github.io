@@ -79,7 +79,7 @@ for (let i = 0; i < selectItems.length; i++) {
 const filterItems = document.querySelectorAll("[data-filter-item]");
 
 const filterFunc = function (selectedValue) {
-
+console.log(selectedValue, filterItems);
   for (let i = 0; i < filterItems.length; i++) {
 
     if (selectedValue === "all") {
@@ -87,6 +87,7 @@ const filterFunc = function (selectedValue) {
     } else if (selectedValue === filterItems[i].dataset.category) {
       filterItems[i].classList.add("active");
     } else {
+      console.log(filterItems[i].classList);
       filterItems[i].classList.remove("active");
     }
 
@@ -150,7 +151,7 @@ for (let i = 0; i < navigationLinks.length; i++) {
         navigationLinks[i].classList.add("active");
         window.scrollTo(0, 0);
       } else {
-        pages[i].classList.remove("active");
+        pages[i]?.classList.remove("active");
         navigationLinks[i].classList.remove("active");
       }
     }

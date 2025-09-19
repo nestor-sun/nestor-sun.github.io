@@ -1027,6 +1027,9 @@ main {
   grid-template-columns: 1fr;
   gap: 30px;
   margin-bottom: 10px;
+  h5{
+    color:  var(--light-gray-70);
+  }
 }
 .research-project-list{
   .research-project-list-item{
@@ -1134,7 +1137,9 @@ main {
   a {
     color: var(--vegas-gold);
   }
+ 
 }
+
 
 
 
@@ -1212,13 +1217,14 @@ main {
   margin-bottom: 10px;
   line-height: 1.3;
   transition: var(--transition-1);
+  font-size: var(--fs-4);
 }
 
 .blog-post-item > a:hover .blog-item-title { color: var(--orange-yellow-crayola); }
 
 .blog-text {
   color: var(--light-gray);
-  font-size: var(--fs-6);
+  font-size: var(--fs-8);
   font-weight: var(--fw-300);
   line-height: 1.6;
 }
@@ -1879,7 +1885,7 @@ textarea.form-input::-webkit-resizer { display: none; }
    * BLOG
    */
 
-  .blog-banner-box { height: 400px; }
+  .blog-banner-box { height: 230px; }
 
 }
 
