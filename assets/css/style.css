@@ -919,6 +919,72 @@ main {
   line-height: 1.6;
 }
 
+/* News Timeline Styles */
+.news-timeline-list {
+  font-size: var(--fs-6);
+  margin-left: 45px;
+}
+
+.news-timeline-item { 
+  position: relative; 
+}
+
+.news-timeline-item:not(:last-child) { 
+  margin-bottom: 30px; 
+}
+
+.news-timeline-item:first-child {
+  /* margin-top: 0; */
+}
+
+.news-timeline-item-title {
+  font-size: var(--fs-6);
+  line-height: 1.3;
+  margin-bottom: 7px;
+}
+
+.news-timeline-list span {
+  color: var(--vegas-gold);
+  font-weight: var(--fw-400);
+  line-height: 1.6;
+}
+
+.news-timeline-item:not(:last-child)::before {
+  content: "";
+  position: absolute;
+  top: -25px;
+  left: -30px;
+  width: 1px;
+  height: calc(100% + 60px);
+  background: var(--jet);
+}
+
+.news-timeline-item:first-child::before {
+  top: 0px;
+  height: calc(100% + 40px);
+}
+.news-timeline-item:last-child::after {
+  /* top: 0px; */
+}
+
+.news-timeline-item::after {
+  content: "";
+  position: absolute;
+  top: 5px;
+  left: -33px;
+  height: 6px;
+  width: 6px;
+  background: var(--text-gradient-yellow);
+  border-radius: 50%;
+  box-shadow: 0 0 0 4px var(--jet);
+}
+
+.news-timeline-text {
+  color: var(--light-gray);
+  font-weight: var(--fw-300);
+  line-height: 1.6;
+}
+
 
 /**
  * skills 
@@ -1619,7 +1685,17 @@ textarea.form-input::-webkit-resizer { display: none; }
 
   .timeline-item:not(:last-child)::before { left: -40px; }
 
+  .news-timeline-list { margin-left: 65px; }
+
+  .news-timeline-item:not(:last-child)::before { left: -40px; }
+
   .timeline-item::after {
+    height: 8px;
+    width: 8px;
+    left: -43px;
+  }
+
+  .news-timeline-item::after {
     height: 8px;
     width: 8px;
     left: -43px;
