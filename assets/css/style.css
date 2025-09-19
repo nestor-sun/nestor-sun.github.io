@@ -1028,7 +1028,9 @@ main {
   gap: 30px;
   margin-bottom: 10px;
   h5{
-    color:  var(--light-gray-70);
+    color:  var(--white-2);
+    font-size: var(--fs-3);
+
   }
 }
 .research-project-list{
