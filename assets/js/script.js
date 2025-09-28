@@ -142,19 +142,34 @@ const navigationLinks = document.querySelectorAll("[data-nav-link]");
 const pages = document.querySelectorAll("[data-page]");
 
 // add event to all nav link
+// 报错原因：
+// 原代码中，内层 for 循环用同一个 i 变量遍历 pages，
+// 但在循环体内却用 navigationLinks[i]，这会导致当 pages.length > navigationLinks.length 时，
+// navigationLinks[i] 可能为 undefined，访问 undefined.classList 就会报错。
+// 修复方法：分开循环，分别处理 nav 和 page 的 active 状态。
+
 for (let i = 0; i < navigationLinks.length; i++) {
   navigationLinks[i].addEventListener("click", function () {
+    const pageName = this.innerText.trim().toLowerCase();
 
-    for (let i = 0; i < pages.length; i++) {
-      if (this.innerHTML.toLowerCase() === pages[i].dataset.page) {
-        pages[i].classList.add("active");
-        navigationLinks[i].classList.add("active");
-        window.scrollTo(0, 0);
-      } else {
-        pages[i]?.classList.remove("active");
-        navigationLinks[i].classList.remove("active");
-      }
+    // 先移除所有 active
+    for (let j = 0; j < navigationLinks.length; j++) {
+      navigationLinks[j].classList.remove("active");
+    }
+    for (let j = 0; j < pages.length; j++) {
+      pages[j].classList.remove("active");
     }
 
+    // 当前导航高亮
+    this.classList.add("active");
+
+    // 匹配页面高亮
+    for (let j = 0; j < pages.length; j++) {
+      if (pages[j].dataset.page === pageName) {
+        pages[j].classList.add("active");
+        window.scrollTo(0, 0);
+        break;
+      }
+    }
   });
 }
