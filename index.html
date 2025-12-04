@@ -47,7 +47,12 @@
   <meta property="og:image:width" content="500">
   <meta property="og:image:height" content="500">
   <meta property="og:image:alt" content="Dr. Mingwei Sun - Assistant Professor at University of Texas Arlington">
+  <meta property="og:image:type" content="image/jpeg">
   <meta property="og:site_name" content="Mingwei Sun - Academic Portfolio">
+  
+  <!-- Primary image specification for search engines -->
+  <link rel="image_src" href="https://nestor-sun.github.io/assets/images/profile.jpg">
+  <meta name="thumbnail" content="https://nestor-sun.github.io/assets/images/profile.jpg">
 
   <!-- Twitter -->
   <meta property="twitter:card" content="summary_large_image">
@@ -71,7 +76,14 @@
         "name": "University of Texas at Arlington"
       },
       "url": "https://nestor-sun.github.io/",
-      "image": "https://nestor-sun.github.io/assets/images/profile.jpg",
+      "image": {
+        "@type": "ImageObject",
+        "url": "https://nestor-sun.github.io/assets/images/profile.jpg",
+        "width": 500,
+        "height": 500,
+        "caption": "Dr. Mingwei Sun - Assistant Professor in Information Systems at University of Texas Arlington",
+        "contentUrl": "https://nestor-sun.github.io/assets/images/profile.jpg"
+      },
       "sameAs": [
         "https://www.linkedin.com/in/nestor-sun/",
         "https://github.com/nestor-sun",
@@ -116,8 +128,16 @@
 
       <div class="sidebar-info">
 
-        <figure class="avatar-box">
-          <img src="./assets/images/profile.jpg" alt="Dr. Mingwei Sun - Assistant Professor in Information Systems at University of Texas Arlington" width="80">
+        <figure class="avatar-box" itemscope itemtype="https://schema.org/ImageObject">
+          <img src="./assets/images/profile.jpg" 
+               alt="Dr. Mingwei Sun - Assistant Professor in Information Systems at University of Texas Arlington" 
+               width="80" 
+               itemprop="contentUrl"
+               itemid="https://nestor-sun.github.io/assets/images/profile.jpg"
+               data-priority="high"
+               loading="eager">
+          <meta itemprop="name" content="Dr. Mingwei Sun Profile Photo">
+          <meta itemprop="description" content="Official profile photo of Dr. Mingwei Sun, Assistant Professor in Information Systems at University of Texas Arlington">
         </figure>
 
         <div class="info-content">
@@ -673,15 +693,33 @@
     <h3 class='h3'>Personal Interests</h3>
     <div class="interests-gallery">
       <div class="interest-item">
-        <img src="./assets/images/3.jpg" alt="Dr. Mingwei Sun Reading - Academic Research and Learning" width="150">
+        <img src="./assets/images/3.jpg" 
+             alt="Reading hobby illustration - Academic Research and Learning" 
+             width="150"
+             role="img"
+             aria-label="Decorative image representing mining as a hobby"
+             loading="lazy"
+             data-priority="low">
        
       </div>
       <div class="interest-item">
-        <img src="./assets/images/1.jpg" alt="Dr. Mingwei Sun Traveling - International Academic Conferences" width="150">
+        <img src="./assets/images/1.jpg" 
+             alt="Traveling hobby illustration - International Academic Conferences" 
+             width="150"
+             role="img"
+             aria-label="Decorative image representing traveling as a hobby"
+             loading="lazy"
+             data-priority="low">
        
       </div>
       <div class="interest-item">
-        <img src="./assets/images/2.jpg" alt="Dr. Mingwei Sun Cooking - Work-Life Balance" width="150">
+        <img src="./assets/images/2.jpg" 
+             alt="Cooking hobby illustration - Work-Life Balance" 
+             width="150"
+             role="img"
+             aria-label="Decorative image representing sport as a hobby"
+             loading="lazy"
+             data-priority="low">
        
       </div>
       <p class="interests-description">
