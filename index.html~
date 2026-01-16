@@ -47,7 +47,12 @@
   <meta property="og:image:width" content="500">
   <meta property="og:image:height" content="500">
   <meta property="og:image:alt" content="Dr. Mingwei Sun - Assistant Professor at University of Texas Arlington">
+  <meta property="og:image:type" content="image/jpeg">
   <meta property="og:site_name" content="Mingwei Sun - Academic Portfolio">
+  
+  <!-- Primary image specification for search engines -->
+  <link rel="image_src" href="https://nestor-sun.github.io/assets/images/profile.jpg">
+  <meta name="thumbnail" content="https://nestor-sun.github.io/assets/images/profile.jpg">
 
   <!-- Twitter -->
   <meta property="twitter:card" content="summary_large_image">
@@ -71,7 +76,14 @@
         "name": "University of Texas at Arlington"
       },
       "url": "https://nestor-sun.github.io/",
-      "image": "https://nestor-sun.github.io/assets/images/profile.jpg",
+      "image": {
+        "@type": "ImageObject",
+        "url": "https://nestor-sun.github.io/assets/images/profile.jpg",
+        "width": 500,
+        "height": 500,
+        "caption": "Dr. Mingwei Sun - Assistant Professor in Information Systems at University of Texas Arlington",
+        "contentUrl": "https://nestor-sun.github.io/assets/images/profile.jpg"
+      },
       "sameAs": [
         "https://www.linkedin.com/in/nestor-sun/",
         "https://github.com/nestor-sun",
@@ -116,8 +128,16 @@
 
       <div class="sidebar-info">
 
-        <figure class="avatar-box">
-          <img src="./assets/images/profile.jpg" alt="Dr. Mingwei Sun - Assistant Professor in Information Systems at University of Texas Arlington" width="80">
+        <figure class="avatar-box" itemscope itemtype="https://schema.org/ImageObject">
+          <img src="./assets/images/profile.jpg" 
+               alt="Dr. Mingwei Sun - Assistant Professor in Information Systems at University of Texas Arlington" 
+               width="80" 
+               itemprop="contentUrl"
+               itemid="https://nestor-sun.github.io/assets/images/profile.jpg"
+               data-priority="high"
+               loading="eager">
+          <meta itemprop="name" content="Dr. Mingwei Sun Profile Photo">
+          <meta itemprop="description" content="Official profile photo of Dr. Mingwei Sun, Assistant Professor in Information Systems at University of Texas Arlington">
         </figure>
 
         <div class="info-content">
@@ -369,6 +389,11 @@
           <h3 class="h3 news-title">Recent News</h3>
 
           <ol class="news-timeline-list">
+            <li class="news-timeline-item">
+
+                <h4 class="h4 news-timeline-item-title">Received COB Research Grant, $5,000</h4>
+
+            </li>
             <li class="news-timeline-item">
 
                 <h4 class="h4 news-timeline-item-title">Our paper received major revision at ISR</h4>
@@ -659,7 +684,7 @@
 		<li> <h4 class="h4 timeline-item-title"> Program Committee </h4> 
         <ul> 
 					<li> 
-	<span> CS: COLING 2025 </span>
+	<span> CS: COLING 2025, ICASSP 2026 </span>
 	    <span>IS: WITS 2025, CIST 2025 </span>
           </li>
 				</ul>
@@ -673,15 +698,33 @@
     <h3 class='h3'>Personal Interests</h3>
     <div class="interests-gallery">
       <div class="interest-item">
-        <img src="./assets/images/3.jpg" alt="Dr. Mingwei Sun Reading - Academic Research and Learning" width="150">
+        <img src="./assets/images/3.jpg" 
+             alt="Reading hobby illustration - Academic Research and Learning" 
+             width="150"
+             role="img"
+             aria-label="Decorative image representing mining as a hobby"
+             loading="lazy"
+             data-priority="low">
        
       </div>
       <div class="interest-item">
-        <img src="./assets/images/1.jpg" alt="Dr. Mingwei Sun Traveling - International Academic Conferences" width="150">
+        <img src="./assets/images/1.jpg" 
+             alt="Traveling hobby illustration - International Academic Conferences" 
+             width="150"
+             role="img"
+             aria-label="Decorative image representing traveling as a hobby"
+             loading="lazy"
+             data-priority="low">
        
       </div>
       <div class="interest-item">
-        <img src="./assets/images/2.jpg" alt="Dr. Mingwei Sun Cooking - Work-Life Balance" width="150">
+        <img src="./assets/images/2.jpg" 
+             alt="Cooking hobby illustration - Work-Life Balance" 
+             width="150"
+             role="img"
+             aria-label="Decorative image representing sport as a hobby"
+             loading="lazy"
+             data-priority="low">
        
       </div>
       <p class="interests-description">
@@ -846,9 +889,9 @@
             <li class="project-item  active" data-filter-item data-category="working papers">
               <div class="research-project-list-item">
 
-                <h3 class="project-title"><span style="display:inline-block;width:5px;height:5px;background:#FFD700;border-radius:50%;margin-right:8px;vertical-align:middle;"></span>MAPO: Multi-Agent-based Prompt Optimization for Text-to-Image Alignment</h3>
-		<p>With Bingze Xu, Kunpeng Zhang and Balaji Padmanabhan</p>
-		<h4>To be submitted to Information Systems Research</h4>
+                <h3 class="project-title"><span style="display:inline-block;width:5px;height:5px;background:#FFD700;border-radius:50%;margin-right:8px;vertical-align:middle;"></span>Aligning Images with Intent: A Multi-Agent Framework for Prompt Optimization in Generative Visual Marketing</h3>
+		<p>With Bingze Xu and Kunpeng Zhang</p>
+		<h4>Under review at Jounral of Marketing</h4>
 		<!--<p class="project-category">Business Journal</p> -->
 
               </div>
