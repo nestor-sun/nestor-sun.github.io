@@ -79,7 +79,6 @@ for (let i = 0; i < selectItems.length; i++) {
 const filterItems = document.querySelectorAll("[data-filter-item]");
 
 const filterFunc = function (selectedValue) {
-console.log(selectedValue, filterItems);
   for (let i = 0; i < filterItems.length; i++) {
 
     if (selectedValue === "all") {
@@ -87,7 +86,6 @@ console.log(selectedValue, filterItems);
     } else if (selectedValue === filterItems[i].dataset.category) {
       filterItems[i].classList.add("active");
     } else {
-      console.log(filterItems[i].classList);
       filterItems[i].classList.remove("active");
     }
 
