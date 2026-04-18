@@ -210,13 +210,13 @@
         <ul class="social-list">
 
           <li class="social-item">
-            <a href="https://www.linkedin.com/in/nestor-sun/" class="social-link">
+            <a href="https://www.linkedin.com/in/nestor-sun/" class="social-link" target="_blank" rel="noopener noreferrer">
               <ion-icon name="logo-linkedin"></ion-icon>
             </a>
           </li>
 
           <li class="social-item">
-            <a href="https://github.com/nestor-sun" class="social-link">
+            <a href="https://github.com/nestor-sun" class="social-link" target="_blank" rel="noopener noreferrer">
               <ion-icon name="logo-github"></ion-icon>
             </a>
           </li>
@@ -303,7 +303,7 @@
         <!--
           - service
         -->
-        <a style="color: var(--vegas-gold); font-size: var(--fs-3); font-weight: var(--fw-600); text-decoration: underline; margin-bottom: 15px;" href="./assets/images/Mingwei_Sun_CV.pdf" target="_blank">CV</a>
+        <a class="cv-btn" href="./assets/images/Mingwei_Sun_CV.pdf" target="_blank" rel="noopener noreferrer">Download CV</a>
         <section class="service">
 
           <h3 class="h3 service-title">Research Interests</h3>
@@ -404,37 +404,6 @@
         </section>
 
 
-        <!--
-          - testimonials modal
-        -->
-
-        <div class="modal-container" data-modal-container>
-
-          <div class="overlay" data-overlay></div>
-
-          <section class="testimonials-modal">
-
-            <button class="modal-close-btn" data-modal-close-btn>
-              <ion-icon name="close-outline"></ion-icon>
-            </button>
-
-            <div class="modal-img-wrapper">
-              <figure class="modal-avatar-box">
-                <img src="./assets/images/avatar-1.png" alt="Daniel lewis" width="80" data-modal-img>
-              </figure>
-
-              <img src="./assets/images/icon-quote.svg" alt="quote icon">
-            </div>
-
-            <div class="modal-content">
-
-
-
-            </div>
-
-          </section>
-
-        </div>
 
 
         <!--
@@ -446,16 +415,6 @@
           <h3 class="h3 clients-title">Upcoming Talks</h3>
 
           <ul class="clients-list has-scrollbar">
-	<!--
-            <li class="clients-item">
-
-              <a href="#">
-                <img style="width: 250px; height: 250px;" src="./assets/images/logo.jpg" alt="University of Texas at Arlington - Academic Institution Logo">
-              </a>
-              <p>INFORMS Annual Meeting 2025</p>
-            </li>
-
-		-->
 
           </ul>
 
@@ -741,67 +700,6 @@
    
   </section>
 
-        <!-- <section class="skill">
-
-          <h3 class="h3 skills-title">My skills</h3>
-
-          <ul class="skills-list content-card">
-
-            <li class="skills-item">
-
-              <div class="title-wrapper">
-                <h5 class="h5">Web design</h5>
-                <data value="80">80%</data>
-              </div>
-
-              <div class="skill-progress-bg">
-                <div class="skill-progress-fill" style="width: 80%;"></div>
-              </div>
-
-            </li>
-
-            <li class="skills-item">
-
-              <div class="title-wrapper">
-                <h5 class="h5">Graphic design</h5>
-                <data value="70">70%</data>
-              </div>
-
-              <div class="skill-progress-bg">
-                <div class="skill-progress-fill" style="width: 70%;"></div>
-              </div>
-
-            </li>
-
-            <li class="skills-item">
-
-              <div class="title-wrapper">
-                <h5 class="h5">Branding</h5>
-                <data value="90">90%</data>
-              </div>
-
-              <div class="skill-progress-bg">
-                <div class="skill-progress-fill" style="width: 90%;"></div>
-              </div>
-
-            </li>
-
-            <li class="skills-item">
-
-              <div class="title-wrapper">
-                <h5 class="h5">WordPress</h5>
-                <data value="50">50%</data>
-              </div>
-
-              <div class="skill-progress-bg">
-                <div class="skill-progress-fill" style="width: 50%;"></div>
-              </div>
-
-            </li>
-
-          </ul>
-
-        </section> -->
 
       </article>
 
@@ -882,8 +780,7 @@
 
                 <h3 class="project-title"><span style="display:inline-block;width:5px;height:5px;background:#FFD700;border-radius:50%;margin-right:8px;vertical-align:middle;"></span>A Multimodal Framework for Video-Based Apparent Personality Understanding</h3>
 		<p>With Kunpeng Zhang and Balaji Padmanabhan</p>
-		<h4><span style="text-decoration: underline; display: inline-block;">Major Revision</span> <span style="display: inline-block;">at Information Systems Research</span></h4>
-		<!--<p class="project-category">Business Journal</p> -->
+		<p class="paper-venue"><span style="text-decoration: underline;">Major Revision</span> at Information Systems Research</p>
 
               </div>
             </li>
@@ -892,8 +789,7 @@
 
                 <h3 class="project-title"><span style="display:inline-block;width:5px;height:5px;background:#FFD700;border-radius:50%;margin-right:8px;vertical-align:middle;"></span>Aligning Images with Intent: A Multi-Agent Framework for Prompt Optimization in Generative Visual Marketing</h3>
 		<p>With Bingze Xu and Kunpeng Zhang</p>
-		<h4>Under review</h4>
-		<!--<p class="project-category">Business Journal</p> -->
+		<p class="paper-venue">Under review</p>
 
               </div>
             </li>
@@ -902,8 +798,7 @@
 
                 <h3 class="project-title"><span style="display:inline-block;width:5px;height:5px;background:#FFD700;border-radius:50%;margin-right:8px;vertical-align:middle;"></span>Large Language Model for Business-Value Alignment</h3>
 		<p>With Kunpeng Zhang and Balaji Padmanabhan</p>
-		<h4>To be submitted</h4>
-		<!--<p class="project-category">business journal</p> -->
+		<p class="paper-venue">To be submitted</p>
 
               </div>
             </li>
@@ -913,8 +808,8 @@
 
                 <h3 class="project-title"><span style="display:inline-block;width:5px;height:5px;background:#FFD700;border-radius:50%;margin-right:8px;vertical-align:middle;"></span>Signals of Efforts or Evidence of Automation? The Countersignaling Effect of Prompt Disclosure</h3>
                 <p>With Jiding Zhang, Che-Wei Liu, Xiaowei Liu and Jiang Duan</p>
-                <h4>To be submitted <a href='https://papers.ssrn.com/sol3/papers.cfm?abstract_id=6571578' style="color:white;">SSRN</a></h4>
-                <!--<p class="project-category">business journal</p> -->
+                <p class="paper-venue">To be submitted</p>
+                <a class="paper-link" href="https://papers.ssrn.com/sol3/papers.cfm?abstract_id=6571578" target="_blank" rel="noopener noreferrer">SSRN</a>
 
               </div>
             </li>
@@ -925,12 +820,11 @@
               <div class="research-project-list-item">
 
                 <h3 class="project-title">
-                  <a target="_blank" href="https://ieeexplore.ieee.org/document/10386376"><span style="display:inline-block;width:5px;height:5px;background:#FFD700;border-radius:50%;margin-right:8px;vertical-align:middle;"></span>Multimodal Co-attention Transformer for Video-Based Personality Understanding
+                  <a target="_blank" rel="noopener noreferrer" href="https://ieeexplore.ieee.org/document/10386376"><span style="display:inline-block;width:5px;height:5px;background:#FFD700;border-radius:50%;margin-right:8px;vertical-align:middle;"></span>Multimodal Co-attention Transformer for Video-Based Personality Understanding
                   </a>
                 </h3>
-		<p>Mingwei Sun and Kunpeng Zhang</p>	
-                <h4>2023 IEEE International Conference on Big Data, Sorrento, Italy, 2023, pp. 1450 -1459 </h4>
-		<h4>Acceptance rate: 17.5%</h4>
+		<p>Mingwei Sun and Kunpeng Zhang</p>
+                <p class="paper-venue">IEEE International Conference on Big Data, Sorrento, Italy, 2023 &nbsp;·&nbsp; Acceptance rate: 17.5%</p>
 
               </div>
             </li>
@@ -941,12 +835,12 @@
 
 
                 <h3 class="project-title">
-                  <a target="_blank" href="https://arxiv.org/abs/2408.15209">
+                  <a target="_blank" rel="noopener noreferrer" href="https://arxiv.org/abs/2408.15209">
                     <span style="display:inline-block;width:5px;height:5px;background:#FFD700;border-radius:50%;margin-right:8px;vertical-align:middle;"></span>Sec2Sec Co-Attention Transformer for Video Emotion Prediction</h3>
 
                   </a>
-	      	 <p>Mingwei Sun and Kunpeng Zhang</p>	
-                <h4>2024 IEEE International Conference on Acoustics, Speech and Signal Processing, Seoul, Korea, 2024, pp. 8255 - 8259</h4>
+                <p>Mingwei Sun and Kunpeng Zhang</p>
+                <p class="paper-venue">IEEE International Conference on Acoustics, Speech and Signal Processing, Seoul, Korea, 2024</p>
 
               </div>
             </li>
