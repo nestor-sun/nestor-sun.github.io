@@ -3,7 +3,10 @@
     "allow": [
       "Bash(git add:*)",
       "Bash(git commit -m ':*)",
-      "Bash(git push:*)"
+      "Bash(git push:*)",
+      "Bash(bash *)",
+      "PowerShell(node --version)",
+      "Bash(git commit *)"
     ]
   }
 }
