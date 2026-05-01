@@ -135,3 +135,26 @@ for (let i = 0; i < navigationLinks.length; i++) {
     }
   });
 }
+
+
+
+// research interest cards → navigate to Research page with stream filter applied
+const streamLinks = document.querySelectorAll("[data-stream-link]");
+
+for (let i = 0; i < streamLinks.length; i++) {
+  streamLinks[i].addEventListener("click", function () {
+    const stream = this.dataset.streamLink;
+
+    // switch to Research page
+    const researchNav = Array.from(navigationLinks).find(
+      btn => btn.innerText.trim().toLowerCase() === "research"
+    );
+    if (researchNav) researchNav.click();
+
+    // apply the matching stream filter
+    const targetBtn = Array.from(filterBtn).find(
+      btn => btn.innerText.trim().toLowerCase() === stream
+    );
+    if (targetBtn) targetBtn.click();
+  });
+}

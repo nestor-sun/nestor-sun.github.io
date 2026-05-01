@@ -310,14 +310,14 @@
 
           <ul class="service-list">
 
-            <li class="service-item">
+            <li class="service-item" data-stream-link="llm">
 
               <div class="service-icon-box">
                 <img src="./assets/images/icon-design.svg" alt="Research Design and Consumer Behavior Analysis Icon" width="40">
               </div>
 
               <div class="service-content-box">
-                <h4 class="h4 service-item-title">LLM Alignment</h4>
+                <h4 class="h4 service-item-title">LLM</h4>
 
                 <p class="service-item-text">
                   Aligning LLMs with business objectives
@@ -326,7 +326,7 @@
 
             </li>
 
-            <li class="service-item">
+            <li class="service-item" data-stream-link="multimodal learning">
 
               <div class="service-icon-box">
                 <img src="./assets/images/icon-dev.svg" alt="Machine Learning and AI Development Icon" width="40">
@@ -342,23 +342,23 @@
 
             </li>
 
-            <li class="service-item">
+            <li class="service-item" data-stream-link="hci">
 
               <div class="service-icon-box">
                 <img src="./assets/images/icon-app.svg" alt="Data Mining and Business Intelligence Applications Icon" width="40">
               </div>
 
               <div class="service-content-box">
-                <h4 class="h4 service-item-title">Computer Vision</h4>
+                <h4 class="h4 service-item-title">HCI</h4>
 
                 <p class="service-item-text">
-                  Developing deep learning methods for computer vision tasks
+                  Studying human-computer interaction in AI-mediated environments
                 </p>
               </div>
 
             </li>
 
-            <li class="service-item">
+            <li class="service-item" data-stream-link="consumer inference">
 
               <div class="service-icon-box">
                 <img src="./assets/images/icon-photo.svg" alt="Deep Learning and Computer Vision Research Icon" width="40">
@@ -410,13 +410,7 @@
           - clients
         -->
 
-        <section class="clients">
 
-          <h3 class="h3 clients-title">Upcoming Talks</h3>
-
-          <ul class="clients-list has-scrollbar">
-
-          </ul>
 
         </section>
 
@@ -726,15 +720,19 @@
             </li>
 
             <li class="filter-item">
-              <button data-filter-btn>Working Papers</button>
+              <button data-filter-btn>LLM</button>
             </li>
 
             <li class="filter-item">
-              <button data-filter-btn>CS Conference</button>
+              <button data-filter-btn>Multimodal Learning</button>
             </li>
 
             <li class="filter-item">
-              <button data-filter-btn>Business Journal</button>
+              <button data-filter-btn>Consumer Inference</button>
+            </li>
+
+            <li class="filter-item">
+              <button data-filter-btn>HCI</button>
             </li>
 
           </ul>
@@ -758,15 +756,19 @@
               </li>
 
               <li class="select-item">
-                <button data-select-item>Working Papers</button>
+                <button data-select-item>LLM</button>
               </li>
 
               <li class="select-item">
-                <button data-select-item>CS Conference</button>
+                <button data-select-item>Multimodal Learning</button>
               </li>
 
               <li class="select-item">
-                <button data-select-item>Business Journal</button>
+                <button data-select-item>Consumer Inference</button>
+              </li>
+
+              <li class="select-item">
+                <button data-select-item>HCI</button>
               </li>
 
             </ul>
@@ -774,78 +776,154 @@
           </div>
 
           <ul class="project-list research-project-list">
-            <h5 class="project-item active project-item-title" data-filter-item data-category="working papers">Working Papers</h5>
-            <li class="project-item  active" data-filter-item data-category="working papers">
-              <div class="research-project-list-item">
 
-                <h3 class="project-title"><span style="display:inline-block;width:5px;height:5px;background:#FFD700;border-radius:50%;margin-right:8px;vertical-align:middle;"></span>A Multimodal Framework for Video-Based Apparent Personality Understanding</h3>
-		<p>With Kunpeng Zhang and Balaji Padmanabhan</p>
-		<p class="paper-venue"><span style="text-decoration: underline;">Major Revision</span> at Information Systems Research</p>
-
+            <!-- LLM -->
+            <li class="project-item active stream-desc" data-filter-item data-category="llm">
+              <div class="stream-desc-inner">
+                <div class="stream-desc-icon"><ion-icon name="git-branch-outline"></ion-icon></div>
+                <div>
+                  <h4 class="h4 stream-desc-title">LLM</h4>
+                  <p class="stream-desc-text">Aligning large language models with organizational and societal objectives to enhance their practical utility in real-world business and decision-making contexts.</p>
+                </div>
               </div>
             </li>
-            <li class="project-item  active" data-filter-item data-category="working papers">
-              <div class="research-project-list-item">
 
+            <li class="project-item active" data-filter-item data-category="llm">
+              <div class="research-project-list-item">
                 <h3 class="project-title"><span style="display:inline-block;width:5px;height:5px;background:#FFD700;border-radius:50%;margin-right:8px;vertical-align:middle;"></span>Aligning Images with Intent: A Multi-Agent Framework for Prompt Optimization in Generative Visual Marketing</h3>
-		<p>With Bingze Xu and Kunpeng Zhang</p>
-		<p class="paper-venue">Under review</p>
-
+                <p class="paper-authors">With Bingze Xu and Kunpeng Zhang</p>
+                <div class="paper-meta-row">
+                  <span class="paper-status status-review">Under Review</span>
+                  <span class="venue-cat venue-cat-biz">Business</span>
+                </div>
               </div>
             </li>
-            <li class="project-item  active" data-filter-item data-category="working papers">
-              <div class="research-project-list-item">
 
+            <li class="project-item active" data-filter-item data-category="llm">
+              <div class="research-project-list-item">
                 <h3 class="project-title"><span style="display:inline-block;width:5px;height:5px;background:#FFD700;border-radius:50%;margin-right:8px;vertical-align:middle;"></span>Large Language Model for Business-Value Alignment</h3>
-		<p>With Kunpeng Zhang and Balaji Padmanabhan</p>
-		<p class="paper-venue">To be submitted</p>
-
+                <p class="paper-authors">With Kunpeng Zhang, Balaji Padmanabhan and Bingze Xu</p>
+                <div class="paper-meta-row">
+                  <span class="paper-status status-draft">To be Submitted</span>
+                  <span class="venue-cat venue-cat-biz">Business</span>
+                </div>
               </div>
             </li>
 
-            <li class="project-item  active" data-filter-item data-category="working papers">
-              <div class="research-project-list-item">
-
-                <h3 class="project-title"><span style="display:inline-block;width:5px;height:5px;background:#FFD700;border-radius:50%;margin-right:8px;vertical-align:middle;"></span>Signals of Efforts or Evidence of Automation? The Countersignaling Effect of Prompt Disclosure</h3>
-                <p>With Jiding Zhang, Che-Wei Liu, Xiaowei Liu and Jiang Duan</p>
-                <p class="paper-venue">Under review</p>
-                <a class="paper-link" href="https://papers.ssrn.com/sol3/papers.cfm?abstract_id=6571578" target="_blank" rel="noopener noreferrer">SSRN</a>
-
+            <!-- Multimodal Learning -->
+            <li class="project-item active stream-desc" data-filter-item data-category="multimodal learning">
+              <div class="stream-desc-inner">
+                <div class="stream-desc-icon"><ion-icon name="layers-outline"></ion-icon></div>
+                <div>
+                  <h4 class="h4 stream-desc-title">Multimodal Learning</h4>
+                  <p class="stream-desc-text">Developing deep learning models that fuse visual, audio, and text modalities to understand complex human signals such as personality, emotion, and intent.</p>
+                </div>
               </div>
             </li>
 
-
-            <h5 class="project-item active project-item-title" data-filter-item data-category="cs conference">CS Conference</h5>
-            <li class="project-item  active" data-filter-item data-category="cs conference">
+            <li class="project-item active" data-filter-item data-category="multimodal learning">
               <div class="research-project-list-item">
+                <h3 class="project-title"><span style="display:inline-block;width:5px;height:5px;background:#FFD700;border-radius:50%;margin-right:8px;vertical-align:middle;"></span>A Multimodal Framework for Video-Based Apparent Personality Understanding</h3>
+                <p class="paper-authors">With Kunpeng Zhang and Balaji Padmanabhan</p>
+                <div class="paper-meta-row">
+                  <span class="paper-status status-revision">Major Revision</span>
+                  <span class="paper-venue-name">Information Systems Research</span>
+                  <span class="venue-cat venue-cat-biz">Business</span>
+                </div>
+              </div>
+            </li>
 
+            <li class="project-item active" data-filter-item data-category="multimodal learning">
+              <div class="research-project-list-item">
                 <h3 class="project-title">
-                  <a target="_blank" rel="noopener noreferrer" href="https://ieeexplore.ieee.org/document/10386376"><span style="display:inline-block;width:5px;height:5px;background:#FFD700;border-radius:50%;margin-right:8px;vertical-align:middle;"></span>Multimodal Co-attention Transformer for Video-Based Personality Understanding
-                  </a>
+                  <a target="_blank" rel="noopener noreferrer" href="https://ieeexplore.ieee.org/document/10386376"><span style="display:inline-block;width:5px;height:5px;background:#FFD700;border-radius:50%;margin-right:8px;vertical-align:middle;"></span>Multimodal Co-attention Transformer for Video-Based Personality Understanding</a>
                 </h3>
-		<p>Mingwei Sun and Kunpeng Zhang</p>
-                <p class="paper-venue">IEEE International Conference on Big Data, Sorrento, Italy, 2023 &nbsp;·&nbsp; Acceptance rate: 17.5%</p>
-
+                <p class="paper-authors">Mingwei Sun and Kunpeng Zhang</p>
+                <div class="paper-meta-row">
+                  <span class="paper-status status-published">Published</span>
+                  <span class="paper-venue-name">IEEE BigData 2023 &nbsp;·&nbsp; Acceptance rate: 17.5%</span>
+                  <span class="venue-cat venue-cat-cs">CS</span>
+                </div>
               </div>
             </li>
 
-
-            <li class="project-item  active" data-filter-item data-category="cs conference">
+            <li class="project-item active" data-filter-item data-category="multimodal learning">
               <div class="research-project-list-item">
-
-
                 <h3 class="project-title">
-                  <a target="_blank" rel="noopener noreferrer" href="https://arxiv.org/abs/2408.15209">
-                    <span style="display:inline-block;width:5px;height:5px;background:#FFD700;border-radius:50%;margin-right:8px;vertical-align:middle;"></span>Sec2Sec Co-Attention Transformer for Video Emotion Prediction</h3>
-
-                  </a>
-                <p>Mingwei Sun and Kunpeng Zhang</p>
-                <p class="paper-venue">IEEE International Conference on Acoustics, Speech and Signal Processing, Seoul, Korea, 2024</p>
-
+                  <a target="_blank" rel="noopener noreferrer" href="https://arxiv.org/abs/2408.15209"><span style="display:inline-block;width:5px;height:5px;background:#FFD700;border-radius:50%;margin-right:8px;vertical-align:middle;"></span>Sec2Sec Co-Attention Transformer for Video Emotion Prediction</a>
+                </h3>
+                <p class="paper-authors">Mingwei Sun and Kunpeng Zhang</p>
+                <div class="paper-meta-row">
+                  <span class="paper-status status-published">Published</span>
+                  <span class="paper-venue-name">IEEE ICASSP 2024, Seoul, Korea</span>
+                  <span class="venue-cat venue-cat-cs">CS</span>
+                </div>
               </div>
             </li>
 
+            <!-- HCI -->
+            <li class="project-item active stream-desc" data-filter-item data-category="hci">
+              <div class="stream-desc-inner">
+                <div class="stream-desc-icon"><ion-icon name="desktop-outline"></ion-icon></div>
+                <div>
+                  <h4 class="h4 stream-desc-title">HCI</h4>
+                  <p class="stream-desc-text">Studying human-computer interaction in AI-mediated environments, examining how people respond to, adopt, and are shaped by intelligent systems.</p>
+                </div>
+              </div>
+            </li>
 
+            <li class="project-item active" data-filter-item data-category="hci">
+              <div class="research-project-list-item">
+                <h3 class="project-title"><span style="display:inline-block;width:5px;height:5px;background:#FFD700;border-radius:50%;margin-right:8px;vertical-align:middle;"></span>A Diffusion Model for Image-Audio Alignment</h3>
+                <p class="paper-authors">With Biyang Xin, Shijie Zhang and Xitong Li</p>
+                <div class="paper-meta-row">
+                  <span class="paper-status status-draft">In Progress</span>
+                </div>
+              </div>
+            </li>
+
+            <li class="project-item active" data-filter-item data-category="hci">
+              <div class="research-project-list-item">
+                <h3 class="project-title"><span style="display:inline-block;width:5px;height:5px;background:#FFD700;border-radius:50%;margin-right:8px;vertical-align:middle;"></span>A Text-Backed Audio Generative Model</h3>
+                <p class="paper-authors">With Shufan Chai, Shijie Zhang and Xitong Li</p>
+                <div class="paper-meta-row">
+                  <span class="paper-status status-draft">In Progress</span>
+                </div>
+              </div>
+            </li>
+
+            <li class="project-item active" data-filter-item data-category="hci">
+              <div class="research-project-list-item">
+                <h3 class="project-title"><span style="display:inline-block;width:5px;height:5px;background:#FFD700;border-radius:50%;margin-right:8px;vertical-align:middle;"></span>An EEG to Audio Generative Model</h3>
+                <p class="paper-authors">With Shen Xie, Shijie Zhang and Xitong Li</p>
+                <div class="paper-meta-row">
+                  <span class="paper-status status-draft">In Progress</span>
+                </div>
+              </div>
+            </li>
+
+            <!-- Consumer Inference -->
+            <li class="project-item active stream-desc" data-filter-item data-category="consumer inference">
+              <div class="stream-desc-inner">
+                <div class="stream-desc-icon"><ion-icon name="pulse-outline"></ion-icon></div>
+                <div>
+                  <h4 class="h4 stream-desc-title">Consumer Inference</h4>
+                  <p class="stream-desc-text">Inferring latent consumer preferences and behavior from unstructured data to generate actionable insights that improve marketing and business strategy.</p>
+                </div>
+              </div>
+            </li>
+
+            <li class="project-item active" data-filter-item data-category="consumer inference">
+              <div class="research-project-list-item">
+                <h3 class="project-title"><span style="display:inline-block;width:5px;height:5px;background:#FFD700;border-radius:50%;margin-right:8px;vertical-align:middle;"></span>Signals of Efforts or Evidence of Automation? The Countersignaling Effect of Prompt Disclosure</h3>
+                <p class="paper-authors">With Jiding Zhang, Che-Wei Liu, Xiaowei Liu and Jiang Duan</p>
+                <div class="paper-meta-row">
+                  <span class="paper-status status-review">Under Review</span>
+                  <span class="venue-cat venue-cat-biz">Business</span>
+                  <a class="paper-link" href="https://papers.ssrn.com/sol3/papers.cfm?abstract_id=6571578" target="_blank" rel="noopener noreferrer">SSRN</a>
+                </div>
+              </div>
+            </li>
 
           </ul>
 
