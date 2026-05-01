@@ -43,18 +43,26 @@ for (let i = 0; i < selectItems.length; i++) {
 const filterItems = document.querySelectorAll("[data-filter-item]");
 
 const filterFunc = function (selectedValue) {
+  const isVenueFilter = selectedValue === "business" || selectedValue === "cs";
+
   for (let i = 0; i < filterItems.length; i++) {
+    const item = filterItems[i];
 
     if (selectedValue === "all") {
-      filterItems[i].classList.add("active");
-    } else if (selectedValue === filterItems[i].dataset.category) {
-      filterItems[i].classList.add("active");
+      item.classList.add("active");
+    } else if (isVenueFilter) {
+      // venue filters only match papers with a matching data-venue; hide stream headers
+      if (item.dataset.venue === selectedValue) {
+        item.classList.add("active");
+      } else {
+        item.classList.remove("active");
+      }
+    } else if (selectedValue === item.dataset.category) {
+      item.classList.add("active");
     } else {
-      filterItems[i].classList.remove("active");
+      item.classList.remove("active");
     }
-
   }
-
 }
 
 // add event in all filter button items for large screen
