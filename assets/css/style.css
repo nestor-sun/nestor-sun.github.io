@@ -2245,11 +2245,11 @@ textarea.form-input::-webkit-resizer { display: none; }
 }
 
 .stream-desc-icon {
-  font-size: 24px;
-  color: var(--orange-yellow-crayola);
   flex-shrink: 0;
   margin-top: 2px;
 }
+
+.stream-desc-icon img { display: block; }
 
 .stream-desc-title {
   color: var(--white-2);
